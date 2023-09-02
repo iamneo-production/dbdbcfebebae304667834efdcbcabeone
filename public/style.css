@@ -50,7 +50,19 @@ body {
     background-color: white;
     display:flex;
     align-items: center;
-    jus
-    width:200px;
+    justify-content:center;
+    margin:auto;
+    max-width:200px;
+  }
+
+  .result{
+    text-shadow: 50px;
+    font-size: 25px;
+  }
+
+  .reset{
+    text-align: center;
+    border-color: black;
+    
   }
 /* Enter your styling here */
