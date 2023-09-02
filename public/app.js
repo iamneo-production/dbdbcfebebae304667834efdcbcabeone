@@ -1,6 +1,6 @@
 // Initial game state
 let cells = ['', '', '', '', '', '', '', '', ''];
-let currentPlayer = 'X';
+let currentPlayer = ['X',"O"];
 let result = document.querySelector('.result');
 let btns = document.querySelectorAll('.btn');
 let conditions = [
@@ -28,10 +28,9 @@ const ticTacToe = (element, index) => {
 
     // Your code to update the game state and check for a win
     
-    const text=document.createElement("p");
-    text.innerText=currentPlayer;
-    element.appendChildren(text);
     
+    element.innerText=currentPlayer;
+
 
     // Your code to display the current player's turn
     // ...
@@ -65,6 +64,5 @@ btns.forEach((btn, i) => {
     btn.addEventListener('click', () => ticTacToe(btn, i));
 });
 
-//const res=document.querySelector('#reset')
-//res.addEventListener('click', resetGame);
+document.querySelector('#reset').addEventListener('click', resetGame);
 
