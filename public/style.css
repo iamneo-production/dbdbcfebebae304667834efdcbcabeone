@@ -8,5 +8,10 @@ body {
     background-position: center center;
     font-family: "Radio Canada", sans-serif;
   }
-  
+
+  h1{
+    text-align: center;
+    color: white;
+  }
+
 /* Enter your styling here */
