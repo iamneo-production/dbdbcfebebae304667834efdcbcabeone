@@ -45,4 +45,12 @@ body {
   .btn:disabled{
     cursor:no-drop;
   }
+
+  .result-container{
+    background-color: white;
+    display:flex;
+    align-items: center;
+    jus
+    width:200px;
+  }
 /* Enter your styling here */
