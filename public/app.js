@@ -1,6 +1,7 @@
 // Initial game state
 let cells = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = ['X',"O"];
+let moves=0;
 let result = document.querySelector('.result');
 let btns = document.querySelectorAll('.btn');
 let conditions = [
@@ -28,8 +29,13 @@ const ticTacToe = (element, index) => {
 
     // Your code to update the game state and check for a win
     
+    if(element.innerText==""){
+        element.innerText=currentPlayer[moves];
+        cells[index]=currentPlayer[moves];
+        moves=(moves+1)%2;
+        console.log(cells);
+    }
     
-    element.innerText=currentPlayer;
 
 
     // Your code to display the current player's turn
