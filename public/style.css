@@ -45,6 +45,7 @@ body {
   }
   .btn:disabled{
     cursor:no-drop;
+    
   }
 
   .result-container{

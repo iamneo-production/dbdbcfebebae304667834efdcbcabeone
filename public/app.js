@@ -30,15 +30,22 @@ const ticTacToe = (element, index) => {
     // Your code to update the game state and check for a win
     
     if(element.innerText==""){
-        element.innerText=currentPlayer[moves];
-        cells[index]=currentPlayer[moves];
-        moves=(moves+1)%2;
+        element.innerText=currentPlayer[(moves%2)];
+        cells[index]=currentPlayer[(moves%2)];
+        moves=moves+1;
     }
     let win;
     for(const pattern of conditions){
         if(cells[pattern[0]]==cells[pattern[1]] && cells[pattern[0]]==cells[pattern[2]] && cells[pattern[0]]!=""){
-            result.innerText="Player "+cells[p]
+            result.innerText="Player "+cells[pattern[0]]+" Won";
+            btns.forEach(btn =>{
+                btn.disabled=true;
+            })
         }
+    }
+
+    if(moves==9){
+        result.innerText="Draw Game";
     }
 
 
