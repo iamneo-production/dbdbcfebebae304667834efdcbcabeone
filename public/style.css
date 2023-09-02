@@ -37,4 +37,12 @@ body {
     font-weight:500;
     background-color: transparent white;
   }
+
+  .btn:hover{
+    cursor:pointer;
+    opacity: 80%;
+  }
+  .btn:disabled{
+    cursor:no-drop;
+  }
 /* Enter your styling here */
