@@ -48,7 +48,7 @@ const ticTacToe = (element, index) => {
     }
 
     if(moves==9){
-        result.innerText="Draw Game";
+        result.innerText="Draw Game 🎉";
     }
 
 
@@ -80,8 +80,8 @@ const resetGame = () => {
     result.innerText="Player X Turn";
 
     // Your code to re-enable buttons
-    btns.forEach(btn=>{
-        btn.innerText="";
+    btns.forEach((btn,i)=>{
+        btn.innerText=cells[i];
         btn.disabled=false;
     })
 };
