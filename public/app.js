@@ -18,6 +18,7 @@ let conditions = [
 
 // Function to handle player moves
 const ticTacToe = (element, index) => {
+    element.disabled=true;
     // Your game logic here
 
     /*
@@ -38,7 +39,7 @@ const ticTacToe = (element, index) => {
     
     for(const pattern of conditions){
         if(cells[pattern[0]]==cells[pattern[1]] && cells[pattern[0]]==cells[pattern[2]] && cells[pattern[0]]!=""){
-            result.innerText="Player "+cells[pattern[0]]+" Won";
+            result.innerText="Player "+cells[pattern[0]]+" Won 🎉";
             win=true;
             btns.forEach(btn =>{
                 btn.disabled=true;
@@ -80,7 +81,8 @@ const resetGame = () => {
 
     // Your code to re-enable buttons
     btns.forEach(btn=>{
-        btn.dis
+        btn.innerText="";
+        btn.disabled=false;
     })
 };
 
