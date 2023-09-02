@@ -34,8 +34,11 @@ const ticTacToe = (element, index) => {
         cells[index]=currentPlayer[moves];
         moves=(moves+1)%2;
     }
+    let win;
     for(const pattern of conditions){
-        if(pattern.every((v)=> ))
+        if(cells[pattern[0]]==cells[pattern[1]] && cells[pattern[0]]==cells[pattern[2]] && cells[pattern[0]]!=""){
+            result.innerText="Player "+cells[p]
+        }
     }
 
 
