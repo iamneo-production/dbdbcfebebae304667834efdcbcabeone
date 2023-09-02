@@ -18,7 +18,7 @@ let conditions = [
 
 // Function to handle player moves
 const ticTacToe = (element, index) => {
-    element.disabled=true;
+    
     // Your game logic here
 
     /*
