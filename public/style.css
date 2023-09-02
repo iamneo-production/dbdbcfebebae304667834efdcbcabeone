@@ -62,13 +62,13 @@ body {
     font-size: 25px;
   }
 
-  .reset{
+  #reset{
     text-align: center;
     border-color: black;
     width:100px;
   }
 
-  .reset:hover{
+  #reset:hover{
     opacity: 70%;
     cursor:pointer;
   }
