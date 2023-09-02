@@ -27,7 +27,7 @@ const ticTacToe = (element, index) => {
     */
 
     // Your code to update the game state and check for a win
-    // ...
+    element.innerText = "X";
 
     // Your code to display the current player's turn
     // ...

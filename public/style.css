@@ -35,13 +35,13 @@ body {
     text-align:center;
     font-size:50px;
     font-weight:500;
-    background-color: transparent white;
+    background-color: white;
     opacity: 80%;
   }
 
   .btn:hover{
     cursor:pointer;
-    opacity: 80%;
+    opacity: 60%;
   }
   .btn:disabled{
     cursor:no-drop;
@@ -54,10 +54,11 @@ body {
     justify-content:center;
     margin:auto;
     max-width:200px;
+    opacity: 80%;
   }
 
   .result{
-    text-shadow: 50px;
+    text-shadow: 2px 2px 4px #000000;
     font-size: 25px;
   }
 
