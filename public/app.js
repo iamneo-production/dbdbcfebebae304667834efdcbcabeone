@@ -28,6 +28,9 @@ const ticTacToe = (element, index) => {
 
     // Your code to update the game state and check for a win
     
+    const text=document.createElement("p");
+    text.innerText=currentPlayer;
+    element.appendChildren(text);
     
 
     // Your code to display the current player's turn
