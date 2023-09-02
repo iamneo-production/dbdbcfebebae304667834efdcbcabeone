@@ -33,9 +33,10 @@ const ticTacToe = (element, index) => {
         element.innerText=currentPlayer[moves];
         cells[index]=currentPlayer[moves];
         moves=(moves+1)%2;
-        console.log(cells);
     }
-    
+    for(const pattern of conditions){
+        if(pattern.every((v)=> ))
+    }
 
 
     // Your code to display the current player's turn
