@@ -29,6 +29,7 @@ const ticTacToe = (element, index) => {
     // Your code to update the game state and check for a win
     
     
+    
 
     // Your code to display the current player's turn
     // ...
@@ -59,7 +60,7 @@ const resetGame = () => {
 };
 
 btns.forEach((btn, i) => {
-    btn.addEventListener('click', () => ticTacToe(btn, i));
+    btn.addEventListener('click', () => ticTacToe(btn, btn.id));
 });
 
 //const res=document.querySelector('#reset')
